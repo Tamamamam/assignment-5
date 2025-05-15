@@ -77,15 +77,15 @@ function calculatePrice () {
     }
   });
 
-  price = Math.max(price, 0).toFixed(2); // non-negative, 2-dp
+  price = Math.max(price, 0).toFixed(2); 
 
   const resultBox = document.getElementById('result');
-  resultBox.innerHTML = `<h3>Final price: $${price}</h3>`;   // 1️⃣ HTML
-  resultBox.style.backgroundColor = '#e9ffe7';               // 1️⃣ CSS
+  resultBox.innerHTML = `<h3>Final price: $${price}</h3>`;   
+  resultBox.style.backgroundColor = '#e9ffe7';               
   resultBox.style.border          = '2px solid #28a745';
 
   document.querySelector('h1').textContent =
-    'Dowry calculator • Result ready!';                      // 2️⃣ HTML
+    'Dowry calculator • Result ready!';                      
 
-  document.getElementById('submit').textContent = 'Recalculate'; // 3️⃣ HTML
+  document.getElementById('submit').textContent = 'Recalculate'; 
 }
